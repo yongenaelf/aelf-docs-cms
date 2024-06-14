@@ -2,6 +2,7 @@ backend:
   name: github
   branch: main
   repo: yongenaelf/aelf-docs-cms
+  squash_merges: true
 
 # These lines should *not* be indented
 media_folder: "static/img" # Media files will be stored in the repo under static/images/uploads
