@@ -68,3 +68,24 @@ collections:
   editor:
     preview: false
   meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
+
+- name: settings
+  label: Settings
+  files:
+    - label: "Footer Links"
+      name: "footerlinks"
+      file: "footer-links.json"
+      fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Intro, name: intro, widget: markdown}
+        - label: Links
+          name: links
+          widget: list
+          fields:
+            - {label: Title, name: title, widget: string}
+            - label: Items
+              name: items
+              widget: list
+              fields:
+                - {label: Label, name: label, widget: string}
+                - {label: To, name: to, widget: string}

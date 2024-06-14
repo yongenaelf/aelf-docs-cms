@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import footerLinks from "./footer-links.json";
 
 const config: Config = {
   title: "AELF Docs",
@@ -80,43 +81,7 @@ const config: Config = {
     },
     footer: {
       style: "dark",
-      links: [
-        {
-          title: "Docs",
-          items: [
-            {
-              label: "Tutorial",
-              to: "/docs/intro",
-            },
-          ],
-        },
-        {
-          title: "Community",
-          items: [
-            {
-              label: "Discord",
-              href: "https://discord.gg/bgysa9xjvD",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/aelfblockchain",
-            },
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "Blog",
-              to: "/blog",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/AElfProject",
-            },
-          ],
-        },
-      ],
+      links: footerLinks.links,
       copyright: `Copyright © ${new Date().getFullYear()} AElfProject.`,
     },
     prism: {
