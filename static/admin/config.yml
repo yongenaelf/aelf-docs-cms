@@ -67,4 +67,4 @@ collections:
   format: frontmatter
   editor:
     preview: false
-  meta: { path: { widget: string, label: 'Path', index_file: 'index' } }  
+  meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
