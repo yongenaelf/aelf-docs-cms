@@ -7,6 +7,7 @@ const config: Config = {
   title: "AELF Docs",
   tagline: "Official documentation for AElfProject.",
   favicon: "img/favicon.ico",
+  trailingSlash: true,
 
   // Set the production url of your site here
   url: "https://docs-cms.aelf.dev",
